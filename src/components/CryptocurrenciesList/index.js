@@ -19,7 +19,7 @@ class CryptocurrenciesList extends Component {
     const {cryptocurrenciesData} = this.props
 
     return (
-      <div className="cryptocurrencies-list-container">
+      <div className="cryptocurrencies-list-container" data-testid="loader">
         {this.renderCryptocurrenciesHeader()}
         <ul className="cryptocurrencies-list">
           {cryptocurrenciesData.map(eachCryptocurrency => (
